@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/
+sudo apt-get update && apt-get -y upgrade && apt-get -y autoremove && apt-get install -y git make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ cpulimit screen
 
 export OBJECT_MODE=64
 
