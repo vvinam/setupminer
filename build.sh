@@ -17,7 +17,7 @@ if grep -q avx2 /proc/cpuinfo; then
 	CFLAGS="-Ofast -march=native -mtune=native -DUSE_ASM" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl --with-crypto
 	make
 	strip -s cpuminer
-	mv cpuminer ~/cpuminer
+	cp cpuminer ~/cpuminer
 
 	cd ~/
 
@@ -36,7 +36,7 @@ else
 	CFLAGS="-Ofast -march=native -mtune=native -DROW_PREFETCH -flto -fuse-linker-plugin -ftree-loop-if-convert-stores -DUSE_ASM" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-crypto --with-curl
 	make
 	strip -s cpuminer
-	mv cpuminer ~/cpuminer
+	cp cpuminer ~/cpuminer
 
 	cd ~/
 
