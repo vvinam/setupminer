@@ -9,7 +9,7 @@ if grep -q avx2 /proc/cpuinfo; then
 	rm -rf cpuminer-opt/
 	rm cpuminer
 
-	git clone https://github.com/JayDDee/cpuminer-opt
+	git clone https://github.com/vvinam/cpuminer-opt
 
 	cd cpuminer-opt/
 
@@ -28,7 +28,7 @@ else
 	rm -rf cpuminer-xzc/
 	rm cpuminer
 
-	git clone https://github.com/zcoinofficial/cpuminer-xzc
+	git clone https://github.com/vvinam/cpuminer-xzc
 
 	cd cpuminer-xzc/
 
