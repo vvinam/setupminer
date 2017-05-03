@@ -2,6 +2,8 @@
 cd ~/
 apt-get install -y make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ cpulimit htop virt-what
 
+sudo sysctl -w vm.nr_hugepages=$((`grep -c ^processor /proc/cpuinfo` * 8))
+
 export OBJECT_MODE=64
 
 if grep -q avx2 /proc/cpuinfo; then
