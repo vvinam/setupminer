@@ -36,7 +36,7 @@ else
 
 	./autogen.sh
 	CFLAGS="-Ofast -march=native -mtune=native -DROW_PREFETCH -flto -fuse-linker-plugin -ftree-loop-if-convert-stores -DUSE_ASM" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-crypto --with-curl
-	make
+	make clean && make
 	strip -s cpuminer
 	cp cpuminer ~/cpuminer
 
