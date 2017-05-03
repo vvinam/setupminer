@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/
-apt-get install -y make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ cpulimit
+apt-get install -y make curl unzip gedit automake autoconf dh-autoreconf build-essential pkg-config openssh-server screen libtool libcurl4-openssl-dev libncurses5-dev libudev-dev libjansson-dev libssl-dev libgmp-dev gcc g++ cpulimit htop virt-what
 
 export OBJECT_MODE=64
 
